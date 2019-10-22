@@ -1,3 +1,7 @@
+/*-------------------------------------------------------*/
+/* Basic Setup */
+/*-------------------------------------------------------*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,19 +16,11 @@ html {
 	text-rendering: optimizeLegibility;
 }
 
-header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url(img/hero.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
-}
+/*-------------------------------------------------------*/
+/* Reusable Components */
+/*-------------------------------------------------------*/
 
-.hero-text-box {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
+/*---------Headings---------*/
 
 h1 {
 	margin: 0;
@@ -36,6 +32,29 @@ h1 {
 	word-spacing: 3px;
 	margin-bottom: 15px;
 }
+
+h2 {
+	margin: 0;
+	font-size: 180%;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+h2:after {
+	display: block;
+	height: 2px;
+	background-color: #e67e22;
+	content: ' ';
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+/*---------Buttons---------*/
 
 .btn {
 	font-weight: 300;
@@ -65,4 +84,53 @@ h1 {
 	color: #fff;
 	background-color: #e67e22;
 	border-color: #e67e22;
+}
+
+section {
+	padding: 80px 0;
+}
+
+/*-------------------------------------------------------*/
+/* Header */
+/*-------------------------------------------------------*/
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url(img/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.hero-text-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-85%, -50%);
+}
+
+.logo {
+	height: 100px;
+	width: auto;
+}
+
+.nav-link,
+.nav-link:visited {
+	color: #fff;
+	font-weight: 300;
+	text-transform: uppercase;
+	border-bottom: 2px solid transparent; /*Ensures there is no jump effect*/
+	transition: color 0.2s, border-bottom 0.2s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+	color: #e67e22;
+	border-bottom: 2px solid #e67e22;
+}
+
+.custom-toggler .navbar-toggler {
+	border-color: rgb(255, 255, 255);
+}
+.custom-toggler .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
