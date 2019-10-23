@@ -40,7 +40,7 @@ h2 {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	word-spacing: 2px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	text-align: center;
 }
 
@@ -51,8 +51,39 @@ h2:after {
 	content: ' ';
 	width: 100px;
 	margin: 0 auto;
-	margin-top: 10px;
+	margin-top: 20px;
 }
+
+h3 {
+	margin: 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-transform: uppercase;
+	word-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+.feature-box p {
+	font: 90%;
+	line-height: 145%;
+}
+
+/*---------Paragraphs---------*/
+.long-copy {
+	line-height: 145%;
+	width: 70%;
+}
+
+/*---------Icons---------*/
+
+.icon-big {
+	font-size: 300%;
+	display: block;
+	color: #e67e22;
+	margin-bottom: 20px;
+}
+
+
 
 /*---------Buttons---------*/
 
@@ -133,4 +164,22 @@ header {
 }
 .custom-toggler .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/*-------------------------------------------------------*/
+/* Meals */
+/*-------------------------------------------------------*/
+
+/*---------Figures---------*/
+
+.meal-photo {
+	margin: 0px;
+	width: 100%;
+
+}
+
+.meal-photo img {
+	width: 100%;
+	height: auto;
 }
